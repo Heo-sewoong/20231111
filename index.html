@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const aNode = document.createElement("a");
+      const atext = document.createTextNode("구글홈페이지");
+      const aattribute = document.createAttribute("href");
+
+      aNode.appendChild(atext);
+      aattribute.value =
+        "https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwixl5Dnk7uCAxX4sFYBHYchCToQPAgJ";
+
+      aNode.setAttributeNode(aattribute);
+
+      document.body.appendChild(aNode);
+    </script>
+  </body>
+</html>
